@@ -10,8 +10,8 @@ function App() {
     <div className="App">
         <NavBar />
         <Routes>
-            <Route path='/' element={<AllPlayers />} />
-            <Route path='/players/:id' element={<SinglePlayer />} />
+            <Route path='/AllPlayers' element={<AllPlayers />} />
+            <Route path='/SinglePlayer' element={<SinglePlayer />} />
         </Routes>
     </div>
   );
