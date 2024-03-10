@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import AllPlayers from "./components/AllPlayers";
-import SinglePlayer from "./components/SinglePlayer";
+import AllPlayers from "./src/components/AllPlayers";
+import SinglePlayer from "./src/components/SinglePlayer.jsx";
 import NavBar from "./components/NavBar";
 import './App.css'
 
