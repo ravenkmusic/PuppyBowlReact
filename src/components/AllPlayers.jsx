@@ -17,11 +17,13 @@ export default function AllPlayers(){
         {
             players.map((player)=>{
                 return (
-                    <div key = {player.id}>
-                        <h4>{player.name}</h4>
-                        Breed: {player.breed}
-                        Team: {player.teamId}
-                    </div>
+                    <>
+                        <div>
+                            Name: {player.name}
+                            Breed: {player.breed}
+                            Team: {player.teamId}
+                        </div>
+                    </>
                 );
             })
         }
