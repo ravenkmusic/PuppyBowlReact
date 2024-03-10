@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchAllPlayers } from "./api/index.js";
+import fetchAllPlayers from "./api/index";
 
 export default function AllPlayers(){
     const [players, setPlayers] = useState([]);
@@ -18,7 +18,8 @@ export default function AllPlayers(){
                 return (
                     <div key = {player.id}>
                         <h4>{player.name}</h4>
-                        player = {player}
+                        Breed: {player.breed}
+                        Team: {player.teamId}
                     </div>
                 );
             })
