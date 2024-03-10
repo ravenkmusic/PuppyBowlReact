@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import fetchAllPlayers from "../API/index.js";
 
 export default function AllPlayers(){
-    const [players, setPlayers] = useState([]);
+    return <h1>All Players!</h1>
+    /* const [players, setPlayers] = useState([]);
 
     useEffect(() =>{
         async function getAllPlayers(){
@@ -21,5 +22,5 @@ export default function AllPlayers(){
             })
         }
     </div>
-    )
+    ) */
 }
