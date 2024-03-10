@@ -5,7 +5,7 @@ const state = {
     players: [],
 };
 
-async function fetchAllPlayers(){
+export async function fetchAllPlayers(){
     try {
         const response = await fetch(`${API_URL}`);
         const result = await response.json();
