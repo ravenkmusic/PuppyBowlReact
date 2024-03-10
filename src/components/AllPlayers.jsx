@@ -1,8 +1,11 @@
-import { useState, useEffect } from "react";
+/*import { useState, useEffect } from "react";
 import fetchAllPlayers from "../API/index.js";
+*/
 
 export default function AllPlayers(){
-    return <h1>All Players!</h1>
+    return (
+        <h1>All Players!</h1>
+    )
     /* const [players, setPlayers] = useState([]);
 
     useEffect(() =>{
