@@ -1,8 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { fetchAllPlayers } from ".api/index.js";
 
 export default function AllPlayers(){
+    const [players, setPlayers] = useState([]);
+    useEffect(() =>{
+        async function getAllPlayers(){
+            const players = await fetchAllPlayers();
+            setPlayers(players);
+        }
+        getAllPlayers();
+    }, []);
+    
     return (
-        <h1>This is the AllPlayers component.</h1>
+        <div>
+        {
+            players.map((player)=>{
+                return (
+                    <div key = {player.id}>
+                        <h4>{player.name}</h4>
+                        player = {player}
+                    </div>
+                );
+            })
+        }
+    </div>
     )
 }
