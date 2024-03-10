@@ -7,7 +7,7 @@ import './App.css';
 function App() {
 
   return ( 
-    <div className="App">
+    <div id="container">
         <NavBar />
         <Routes>
             <Route path='/AllPlayers' element={<AllPlayers />} />
