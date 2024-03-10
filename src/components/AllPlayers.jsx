@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import fetchAllPlayers from "../API/index.js";
+import fetchAllPlayers from "../API";
 
 export default function AllPlayers(){
     const [players, setPlayers] = useState([]);
-    
+
     useEffect(() =>{
         async function getAllPlayers(){
             const players = await fetchAllPlayers();
