@@ -3,9 +3,7 @@ import fetchAllPlayers from "../API/index.js";
 */
 
 export default function AllPlayers(){
-    return (
-        <h1>All Players!</h1>
-    )
+   
     /* const [players, setPlayers] = useState([]);
 
     useEffect(() =>{
@@ -14,16 +12,9 @@ export default function AllPlayers(){
             setPlayers(players);
         }
         getAllPlayers();
-    }, []);
+    }, []); */
     
-    return (
-        <div>
-        {players.map((player)=>{
-            return <div key = {player}>
-                <h4>Name: {player.name}</h4>
-                </div>
-            })
-        }
-    </div>
-    ) */
+     return (
+        <h1>All Players!</h1>
+    )
 }
