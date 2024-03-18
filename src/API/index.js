@@ -6,3 +6,9 @@ export async function fetchAllPlayers(){
         const result = await response.json();
         return result.data.players;   
 }
+
+export async function getCurrentPlayerById(playerId) {
+    const response = await fetch(`${API_URL}/${playerId}`);
+    const result = await response.json();
+    return result.data.player;
+}
